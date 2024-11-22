@@ -1,0 +1,103 @@
+/* Configuração geral */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+}
+
+/* Cabeçalho e rodapé */
+header, footer {
+    background-color: #23990B;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Layout principal */
+main {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Campos de entrada */
+label {
+    margin-top: 0.5rem;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #000;
+}
+
+input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #696969;
+    border-radius: 5px;
+    background-color: #F7F7F7;
+    box-sizing: border-box;
+}
+
+/* Estilo do fieldset */
+fieldset {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    border: 2px solid #23990B;
+    border-radius: 10px;
+    background-color: #E1FFE1;
+    margin-bottom: 2rem;
+}
+
+/* Botões */
+button {
+    width: 100%;
+    padding: 0.8rem 1.5rem;
+    background-color: #23990B;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: #32CD32;
+}
+
+/* Resultados */
+#results {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #E1FFE1;
+    border-radius: 10px;
+    border: 2px solid #23990B;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+    color: #000;
+}
+
+/* Ajuste para telas pequenas */
+@media (max-width: 600px) {
+    fieldset {
+        grid-template-columns: 1fr;
+    }
+}
+
+legend {
+    font-weight: bold; /* Destaca o texto */
+    background-color: #23990B; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 0.8rem; /* Espaçamento interno */
+    box-sizing: border-box; /* Garante que o padding seja incluído no cálculo de largura */
+    display: block; /* Torna a legenda um bloco para controle total de largura */
+}
